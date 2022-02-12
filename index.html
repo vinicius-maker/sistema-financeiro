@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Trabalho Patrico - Sistema Financeiro</title>
+        <meta name="description" content="Descrição da página" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />  
+        <link rel="stylesheet" href="style/styles.css">
+    </head>
+<body>
+    <h1>Simulação de Financiamento</h1>
+    <div class="simulacao">
+    <fieldset class="fieldset">
+        Valor:<input id="valor" type="number" name="valorInput" placeholder="200.000"> 
+        Prazo(anos):<input id="prazo" type="number" name="prazo" placeholder="20"> 
+        Juros ao ano:<input id="juros" type="number" name="juros" placeholder="0.08"> 
+    </div>
+    <button id="botao" onclick="calculaPrazo(), calculaJuros(), calculaAmortizacao(), calculaJurosAcumulados()">Simular</button>
+    </fieldset>
+
+
+    <div class="resultado">
+        <fieldset class="fieldset">
+            <h1>Resultado</h1>
+            <p>Prazo(meses):<span id="resultadoPrazo"></span></p>
+            <p>Juros ao mês:<span id="resultadoJurosMes"></span></p>
+            <p>Juros Acumulados:<span id="resultadoJurosAcumulados"></span></p>
+            <p>Amortizacao:<span id="amortizacao"></span></p>
+
+        </fieldset>
+    </div>
+
+    <div class="resultado">
+        <fieldset class="fieldset">
+            <label>Prestação</label> 
+            <label>Amortizacao</label> 
+            <label>Juros</label> 
+            <label>Total</label> 
+            <table></table>
+        </fieldset>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+

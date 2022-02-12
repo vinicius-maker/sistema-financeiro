@@ -1,0 +1,10 @@
+h1 {
+  color: aqua;
+}
+th {
+  flex-direction: row;
+}
+
+tr > th {
+  color: aqua;
+}
